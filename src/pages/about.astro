@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="À propos - Cismopip">
+	<div class="min-h-[70vh] flex items-center justify-center">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+			<!-- Header -->
+			<div class="text-center mb-16 animate-fade-in-up">
+				<h1 class="text-gradient mb-6">À propos de Cismopip</h1>
+				<p class="text-xl leading-relaxed text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+					Cismopip est une entreprise innovante spécialisée dans la sécurité des données personnelles. Notre mission est de fournir des solutions d'authentification uniques et fiables pour protéger vos informations sensibles.
+				</p>
+			</div>
+
+			<!-- Mission card -->
+			<div class="card mb-12 max-w-3xl mx-auto hover:scale-[1.01]">
+				<div class="flex items-start space-x-4">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-accent-600 rounded-lg flex items-center justify-center flex-shrink-0">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+						</svg>
+					</div>
+					<div>
+						<h2 class="text-2xl font-bold mb-3">Notre Mission</h2>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							Innover pour la sécurité numérique en repensant l'authentification. Nous créons des solutions qui allient sécurité avancée, simplicité d'utilisation et respect de la vie privée.
+						</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm">Innovation</span>
+							<span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-700 dark:text-accent-300 rounded-full text-sm">Sécurité</span>
+							<span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm">Confiance</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Product section -->
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+				<div class="animate-fade-in-up">
+					<h2 class="text-3xl font-bold mb-6">Notre Produit</h2>
+					<p class="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+						Le capuchon de reconnaissance pénienne est une technologie de pointe qui utilise la reconnaissance biométrique pour sécuriser l'accès à vos données.
+					</p>
+					<p class="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+						Fonctionnant sur le principe de la reconnaissance faciale, mais adapté à une partie plus intime du corps, ce dispositif garantit une sécurité inégalée pour vos portefeuilles crypto, comptes bancaires et autres données confidentielles.
+					</p>
+					<div class="card mt-6">
+						<h3 class="text-xl font-semibold mb-3">Caractéristiques principales</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start space-x-3">
+								<svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+								<span>Reconnaissance biométrique précise et fiable</span>
+							</li>
+							<li class="flex items-start space-x-3">
+								<svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+								<span>Protection inviolable de vos actifs numériques</span>
+							</li>
+							<li class="flex items-start space-x-3">
+								<svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+								<span>Discret, simple à utiliser au quotidien</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Product illustration -->
+				<div class="relative animate-fade-in-up" style="animation-delay: 0.2s;">
+					<div class="absolute inset-0 hero-gradient rounded-2xl blur-3xl opacity-20"></div>
+					<div class="relative glass rounded-2xl p-8 text-center">
+						<div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center">
+							<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold mb-3">Cismopip Pro</h3>
+						<p class="text-gray-600 dark:text-gray-400">
+							La solution ultime pour sécuriser tous vos comptes en un seul geste.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
